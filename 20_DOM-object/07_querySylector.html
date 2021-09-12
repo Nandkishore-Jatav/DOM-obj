@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Query Selector Document</title>
+</head>
+<body>
+    <p class="om">//mmmmmmmmmmLorem ipsum dolor sit amet consectetur adipisicing elit. Ut, sapiente?</p>
+    <p>//MMMMMMMMMLorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    <h2>//MMNNNNNNNNNNNNNNLorem ipsum dolor sit amet consectetur adipisicing elit. Esse, aspernatur mollitia. Voluptas laboriosam vitae accusamus ea recusandae dolores quidem? Cum?</h2>
+    <h1 id="nandu"></h1>
+    <strong id="kishore"></strong>
+    
+    <script>
+        const nand = document.querySelectorAll("p");
+        document.getElementById("nandu").innerHTML = "MMMMMMMMMLorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, voluptates." + nand[1].innerHTML;
+        document.getElementById("kishore").innerHTML = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores dolorem sed quas perspiciatis, libero facere." + nand[0].innerHTML;
+
+        // document.getElementById("h1");
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Document</title>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, tempora!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A exercitationem repellendus nobis molestias nemo, rerum unde minima dolores in.</h1>
+    <form action="" id="frm1">
+        fname : <input type="text" name="name" value="Nandkishore">
+        lname : <input type="text" name="lastname" value="Jatav">
+        <input type="submit" value="submit" >
+    </form>
+    <form action="" id="frm2">
+        fname : <input type="text" name="name" value="Nandkishore">
+        lname : <input type="text" name="lastname" value="Jatav">
+        <input type="submit" value="submit" >        
+    </form>
+    <h3 id="nand"></h3>
+    <p id="kishore"></p>
+    <script>
+        
+        const nandd = document.forms["frm1"];
+        text = " ";
+        
+        for(var i of nandd){
+            text += i; 
+        }
+        document.getElementById("nandd").innerHTML = text;
+        //****************************
+
+        const elm = document.forms["frm2"];
+        const texts = "";
+        for(let n = 0; n < elm.length; n++){
+            texts += elm.elements[n].value;
+        }
+        document.getElementById("kishore").innerHTML = texts;
+    </script>
+</body>
+</html>

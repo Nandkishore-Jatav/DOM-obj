@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>class Name Document</title>
+</head>
+<body>
+    <p class="nand">NNNNNNNNNNNNNNNLorem ipsum dolor sit amet consectetur adipisicing elit. Illum maxime possimus velit quos ad!</p>
+    <h1 class="nand">MMMMMMMMMMMMLorem ipsum dolor sit amet consectetur adipisicing elit. Error doloribus voluptatibus quas reprehenderit. Exercitationem itaque omnis laboriosam magnam.</h1>
+
+    <p id="kishore"></p>
+
+    <script>
+        const nayan = document.getElementsByClassName("nand");
+        document.getElementById("kishore").innerHTML = "Lorem ipsum dolor sit amet, consectetur adipisicing elit." + nayan[1].innerHTML;
+    </script>
+</body>
+</html>

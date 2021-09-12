@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TagName and Id Document</title>
+</head>
+
+<body>
+    <div id="hellow">
+        <p>NNNNNNNNNNNNLorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, at!</p>
+        <p>OOOOOOOOOOOLorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum temporibus at quis. Incidunt dolorum dolorem
+            atque amet.</p>
+
+    </div>
+    <h3 id="nayan">00000000</h3>
+    <h1 id="nandkishore"></h1>
+
+    <script>
+        const s = document.getElementById("hellow");
+        const n = s.getElementsByTagName('p');
+        
+        document.getElementById("nayan").innerHTML = n[0].innerHTML;
+        document.getElementById("nandkishore").innerHTML = n[1].innerHTML;
+
+    </script>
+</body>
+
+</html>
